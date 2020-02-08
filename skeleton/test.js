@@ -17,4 +17,10 @@ test('deleteTodo() return a new array, this should not contain any todo with an 
 });
 
 
+test('markTodo() return same array but will toggle between true and false in done value only', ()=>{
+	let mainArr = [{id:1,description:'test1',done:false}]
+	let actual = todoFunctions.markTodo(mainArr,1)
+	let expected = [{id:1,description:'test1',done:true}]
+	expect(actual).toEqual(expected);
+})
 
