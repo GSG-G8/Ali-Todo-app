@@ -24,11 +24,12 @@
       // add span holding description
       let descriptionSpan = document.createElement('span');
       descriptionSpan.textContent = todo.description;
+      descriptionSpan.classList.add('todo')
       if(todo.done) todoNode.classList.toggle('done')
       
       // this adds the delete button
       var deleteButtonNode = document.createElement('button');
-      deleteButtonNode.textContent = 'Delete';
+      deleteButtonNode.textContent = 'X';
       deleteButtonNode.addEventListener('click', function(event) {
         var newState = todoFunctions.deleteTodo(state, todo.id);
         update(newState);

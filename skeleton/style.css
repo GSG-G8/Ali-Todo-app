@@ -1,3 +1,90 @@
-.done{
-    color: red;
+* {
+  font-family: sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.box-container {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(25,25,25,.25);
+  
+}
+#todo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#add-todo {
+  display: flex;
+  margin-top: 30PX;
+}
+button, #sub-btn {
+    
+    font-size: 14px;
+    margin: 0 .5em;
+    border-radius: 2em;
+    padding: 0.75em 1.5em;
+    cursor: pointer;
+    background: none;
+    color: darken(#4fc08d, 20%);
+    border: 1px solid;
+    letter-spacing: 1px;
+    color: #4fc08d;
+    border: #4fc08d 1px solid;
+    transition: 250ms ease-out;
+    outline: none;
+    
+}
+button { 
+    margin-left: 30px; 
+}
+#sub-btn:hover{
+    color: #fff;
+    background: #4fc08d;
+  
+}
+button:focus {
+    color: #fff;
+    background: #4fc08d;
+}
+button:hover {
+    color: #fff;
+    background: #4fc08d;
+  cursor: pointer;
+}
+
+#input-value{
+    width: 100%;
+    font-size: 14px;
+    margin: 0 .5em;
+    border-radius: 2em;
+    padding: 0.75em 1.5em;
+    background: none;
+    font-family: "Source Sans Pro", sans-serif;
+    border: #e3e3e3 1px solid;
+    -webkit-transition: border 250ms ease-out;
+    transition: border 250ms ease-out;
+    outline: none;
+}
+#input-value:focus {
+    border: #4fc08d 1px solid;
+    outline: none;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: flex-start;
+    margin: 30px;
+}
+.done {
+  text-decoration: line-through;
+  color: #4fc08d;
+  list-style: none;
+  text-decoration: line-through;
 }
